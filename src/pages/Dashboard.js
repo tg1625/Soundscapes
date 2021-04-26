@@ -36,7 +36,7 @@ class Dashboard extends Component {
                                 <Form.Control type="time" placeholder="Search" className="mx-sm-2" />
                                 
                             </Form.Group>
-                            <Button variant="outline-success">Search</Button>{" "}
+                            <Button  className="btn-outline-alt" variant="outline-warning">Search</Button>{" "}
                         </Form>
                     </Row>
                     <Row>

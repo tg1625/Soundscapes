@@ -7,7 +7,7 @@ class Annotations extends Component{
     render(){
         return(
             <ListGroup variant="flush">
-                {this.props.notes && this.props.notes.map((c, i) =>
+                {this.props.notes && this.props.notes.sort((firstItem, secondItem) => firstItem.time - secondItem.time).map((c, i) =>
                     <ListGroup.Item>{c.time}s: {c.note}</ListGroup.Item>
                     )
                     }

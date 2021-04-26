@@ -30,9 +30,9 @@ class Header extends Component {
             </NavDropdown>
               <Nav.Link href="/app">App</Nav.Link>
             <NavDropdown variant="dark" title="Citizen Science Project" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/project/faq">About + FAQ</NavDropdown.Item>
-              <NavDropdown.Item href="/project/eclipse">Eclipse Features</NavDropdown.Item>
-              <NavDropdown.Item href="/project/dashboard">Citizen Science Project</NavDropdown.Item>
+              <NavDropdown.Item href="/faq">About + FAQ</NavDropdown.Item>
+              {/* <NavDropdown.Item href="">Eclipse Features</NavDropdown.Item> */}
+              <NavDropdown.Item href="/">Citizen Science Project</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/blog">Blog</Nav.Link>
             </Nav>

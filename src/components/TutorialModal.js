@@ -53,18 +53,22 @@ class TutorialModal extends Component {
                         <Tab.Pane eventKey="#link2">
                             <h3>Viewing the data</h3>
                                 <p>
-                                    After you've selected an index, you will be given both the audio recording, and the graph of the index data
+                                    After you've selected an index, you will be given both the audio recording, and the graph of the index data. 
+                                    Select the play button to start playing the recording. The line on the graph will move with the recording 
+                                    to indicate where the graph correlates with the audio
                                 </p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="#link3">
-                            <h3>Start Sciencing! </h3>
-                            <p>Anyone can help analyze these soundscapes. Just click on any of the 
-                                project cards to get started!If you need any help click the notebook icon on the bottom right side of your screen or
-                                hit CTRL+K to open your field guide.
+                            <h3>Filtering the Data </h3>
+                            <p>You can select which site's data to view using the Site dropdown menu above the graph.
+                                You can also use the Eclipse Phase dropdown menu to jump to a specific point in time of the recording  
                             </p>
-                            <Button variant="success" onClick={this.handleClose}>
-                                Start Exploring
-                            </Button>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="#link4">
+                            <h3>Annotations </h3>
+                            <p>Annotations can be found to the right of the graph. Annotations consist of a time in the recording, and the note for that time.
+                                If you hear something interesting in a recording, add an annotation by writing in the form at the bottom!   
+                            </p>
                         </Tab.Pane>
                     </Tab.Content>
                     </Row>
@@ -81,9 +85,13 @@ class TutorialModal extends Component {
                         <ListGroup.Item action href="#link3">
                         3
                         </ListGroup.Item>
-                        {/* <ListGroup.Item action href="#link4">
+                        <ListGroup.Item action href="#link4">
                         4
                         </ListGroup.Item>
+                        <Button className="alt2" onClick={this.handleClose}>
+                                Close
+                        </Button>
+                        {/* 
                         <ListGroup.Item action href="#link5">
                         5
                         </ListGroup.Item> */}

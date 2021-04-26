@@ -21,6 +21,7 @@ import Data from './pages/Data';
 import {Nav, Navbar, NavDropdown, ListGroup, Button} from 'react-bootstrap';
 import Header from './components/Header';
 import GlossaryModal from './components/GlossaryModal';
+import FAQ from './pages/FAQ';
 
 class App extends Component {
   render() {
@@ -40,9 +41,10 @@ class App extends Component {
             <Switch>
               {/* Homepage route  */}
               <Route exact path="/" component={Dashboard}/ > 
-                
               {/* Dashboard route */}
-              <Route exact path="/data" component={Data}/>
+              <Route exact path="/data" component={Data}/>  
+              {/* Dashboard route */}
+              <Route exact path="/faq" component={FAQ}/>
             </Switch>
           </Router>
           </main>

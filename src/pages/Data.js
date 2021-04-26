@@ -39,7 +39,7 @@ class Dashboard extends Component {
                     <ListGroup variant="flush">
                         <ListGroup.Item as="h5">Location: Greenville County</ListGroup.Item>
                         <ListGroup.Item as="h5">Sites: 8</ListGroup.Item>
-                        <ListGroup.Item as="h5">Data: August 21st, 2017</ListGroup.Item>
+                        <ListGroup.Item as="h5">Date: August 21st, 2017</ListGroup.Item>
                         <ListGroup.Item as="h5">Time: 12:00pm - 17:00pm</ListGroup.Item>
                         <ListGroup.Item><h5>Summary</h5>
                                 Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development

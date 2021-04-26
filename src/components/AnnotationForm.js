@@ -8,7 +8,10 @@ class AnnotationForm extends Component{
         super(props)
         this.state = {
             time: 0,
-            notes: [{"time": "0", "note": "Frequency decrease in Site 2"}]
+            notes: [
+                {"time": "0", "note": "Frequency decrease in Site 2"},
+                {"time": "821", "note": "Site 4 Peak after totality"}
+            ]
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
