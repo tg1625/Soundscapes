@@ -12,7 +12,7 @@ class Header extends Component {
   render() {
     return (
         <header>
-        <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+        <Navbar expand="lg" fixed="top">
           <Navbar.Brand href="/">
             <img src="http://eclipsesoundscapes.org/sites/all/themes/eclipsesoundscapes/assets/images/e-s-logo.png"
               width="30"
@@ -24,17 +24,17 @@ class Header extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
             <NavDropdown variant="dark" title="About Us" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/about">About the Projecrt</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Our Team</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Our Partners</NavDropdown.Item>
+              <NavDropdown.Item href="#">About the Project</NavDropdown.Item>
+              <NavDropdown.Item href="#">Our Team</NavDropdown.Item>
+              <NavDropdown.Item href="#">Our Partners</NavDropdown.Item>
             </NavDropdown>
-              <Nav.Link href="/app">App</Nav.Link>
+              <Nav.Link href="#">App</Nav.Link>
             <NavDropdown variant="dark" title="Citizen Science Project" id="basic-nav-dropdown">
               <NavDropdown.Item href="/faq">About + FAQ</NavDropdown.Item>
               {/* <NavDropdown.Item href="">Eclipse Features</NavDropdown.Item> */}
               <NavDropdown.Item href="/">Citizen Science Project</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/blog">Blog</Nav.Link>
+            <Nav.Link href="#">Blog</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

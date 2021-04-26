@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup} from 'react-bootstrap';
+import {Container, Row, Col, Jumbotron} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
 
 class FAQ extends Component {
@@ -11,7 +11,7 @@ class FAQ extends Component {
 
     render() {
         return (
-        <Container>
+        <Container style={{marginTop:"120px"}}>
             <Row>
                 <Col><h1>Frequently Asked Questions</h1></Col>
             </Row>

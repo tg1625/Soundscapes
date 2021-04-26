@@ -22,6 +22,7 @@ import {Nav, Navbar, NavDropdown, ListGroup, Button} from 'react-bootstrap';
 import Header from './components/Header';
 import GlossaryModal from './components/GlossaryModal';
 import FAQ from './pages/FAQ';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -47,6 +48,7 @@ class App extends Component {
               <Route exact path="/faq" component={FAQ}/>
             </Switch>
           </Router>
+          <Footer/>
           </main>
         </div>
     );
