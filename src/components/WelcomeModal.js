@@ -28,7 +28,8 @@ class WelcomeModal extends Component {
                 FAQ
               </Button>
          */}
-              <Modal show={this.state.show} onHide={this.handleClose}>
+              <Modal show={this.state.show} onHide={this.handleClose}
+              aria-labelledby="contained-modal-title-vcenter" style={{marginTop: "300px;"}}>
                 <Modal.Header closeButton>
                   <Modal.Title>Welcome to Eclipse Soundscapes!</Modal.Title>
                 </Modal.Header>
