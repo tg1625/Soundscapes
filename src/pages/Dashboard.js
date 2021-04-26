@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
-import FAQModal from '../components/FAQModal';
+// import FAQModal from '../components/TutorialModal';
 import WelcomeAlert from '../components/WelcomeAlert';
 import WelcomeModal from '../components/WelcomeModal'
 
@@ -21,33 +21,27 @@ class Dashboard extends Component {
                 <Col>
                     <Row><WelcomeAlert/></Row>
                     <Row><h1>Eclipse Soundscapes</h1></Row>
-                    <Row>
-                        
-                            <Form inline>
-                                {/* <Col md={4}> */}
-                                <Form.Group>
+                    <Row>This is a database of hundreds of audio recording from different places, dates, and times. </Row>
+                    <Row>   
+                        <Form inline>
+                            <Form.Group>
                                 <Form.Control type="text" placeholder="Location" className="mx-sm-2" />
-                                <Button variant="outline-success">Search</Button>{" "}
                             </Form.Group>
-                        {/* </Col> */}
-                    {/* <Col md={4}> */}
                             <Form.Group>
                                 <Form.Label>Date</Form.Label>
                                 <Form.Control type="date" placeholder="Search" className="mx-sm-2" />
                             </Form.Group>
-                        {/* </Col> */}
-                        {/* <Col md={4}> */}
                             <Form.Group>
                                 <Form.Label>Time</Form.Label>
                                 <Form.Control type="time" placeholder="Search" className="mx-sm-2" />
+                                
                             </Form.Group>
-                            </Form>
-                        {/* </Col>  */}
+                            <Button variant="outline-success">Search</Button>{" "}
+                        </Form>
                     </Row>
                     <Row>
                     <Col>
                     <CardDeck>
-                        
                         <Card as={Link} to={{pathname: "/data"}}>
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
                             <Card.Body>

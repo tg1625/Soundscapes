@@ -5,21 +5,37 @@ body{
   font-family: 'Titillium Web', sans-serif;
   font-size:16px;
 }
+a{
+  color: rgb(43, 166, 203);
+}
+a:hover{color:#2795b6;}
 .row{
   margin-top:1em;
 }
 
 .row form{
   min-width:100%;
-  justify-content: space-between;
+  justify-content: start;
 }
 
-.container{
+.row form .form-group{
+  margin-right:20px;
+}
+
+.container, .container-fluid{
   margin-top:60px;
 }
 
+
+
 .alt{
   background: linear-gradient(90deg, #EFB55E 0%, #F4D16F 49.48%, #EFB55E 100%);
+}
+
+.alt2{background:  #E98C44;}
+
+.alt2:hover{
+  background: #EFB55E;
 }
 
 /* SIDEBAAR */
@@ -29,10 +45,10 @@ body{
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   right: 36px;
-  top: 60px;
+  bottom: 60px;
 }
 
 /* Color/shape of burger icon bars */
@@ -67,7 +83,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -79,8 +95,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  /* color: #b8b7ad; */
   padding: 0.8em;
+}
+
+.bm-item .list-group-item{
+  /* color:#E98C44; */
+  border-bottom: 1px solid #F4D16F;
 }
 
 /* Individual item */
@@ -128,8 +149,27 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* DATA PAGE STYLES */
+
 .dataDesc{
-  /* background-color:papayawhip; */
+  margin-top:50px;
+  border: 1px solid rgba(0,0,0,.125);
+  padding:50px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.notebook{
+  margin-top:50px;
+  border: 1px solid rgba(0,0,0,.125);
+  padding:50px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tab-content .row{
+  margin:10px 0 10px 0;
+}
+
+.graphControls form{
+  justify-content: flex-end;
 }
 
 .line{
@@ -137,7 +177,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position:absolute;
     display: block;
     /* margin: 0px 0 auto -250px; */
-    height: calc(100% - 250px);
+    height: calc(100% - 400px);
     width: 2px;
     background: #e72918;
     -webkit-border-radius: 2.5px;
@@ -149,11 +189,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .audioData{
-  /* background-color:paleturquoise; */
+  padding-left:50px;
+  padding-right:50px;
 }
 
 .audioData img{width:100%;}
 
 .audioData audio{
   width: 100%;
+}
+
+.graph{
+  width:100%;
+  text-align:center;
 }

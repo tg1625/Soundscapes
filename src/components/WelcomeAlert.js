@@ -23,9 +23,8 @@ class  WelcomeAlert extends Component {
               <Alert className="alt" onClose={() => this.setShow(false)} dismissible>
                 <Alert.Heading>Welcome to Eclipse Soundscapes: Citizen Science Project!</Alert.Heading>
                 <p>
-                  Click on any of the project cards below to start exploring soundscapes 
-                </p>
-                <p>To learn more about eclipse soundscapes, or how to navigate this project, click on the sidebar links on the right</p>
+                  Click on any of the project cards below to start exploring soundscapes. 
+                To learn more about eclipse soundscapes, or how to navigate this project, open up your field guide on the bottom right</p>
               </Alert>
             );
           }

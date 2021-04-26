@@ -3,7 +3,7 @@ import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, Lis
 import {Link, withRouter} from 'react-router-dom';
 
 
-class FAQModal extends Component {
+class GlossaryModal extends Component {
     constructor(props){
         super(props);
         this.handleShow = this.handleShow.bind(this)
@@ -24,25 +24,29 @@ class FAQModal extends Component {
     render() {
         return (
             <>
-            <Button variant="primary" onClick={this.handleShow}>
-                FAQ
+            <Button variant="link" onClick={this.handleShow}>
+                Glossary
               </Button>
         
-              <Modal show={this.state.show} onHide={this.handleClose}>
+              <Modal show={this.state.show} onHide={this.handleClose} size="lg">
                 <Modal.Header closeButton>
-                  <Modal.Title>FAQ</Modal.Title>
+                  <Modal.Title>Glossary</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                 <Container>
                 <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
-                    
                     <Row>
                     <Tab.Content>
                         <Tab.Pane eventKey="#link1">
-                        <p>Bla vbla</p>
+                            <h3>How to analyze the sounscapes</h3>
+                            <p>Soundscape data is sorted into six different acoustic indeces. You can select which index data
+                                to view using the tabs at the top of the screen. 
+                            </p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="#link2">
-                        <p>Bla vbla</p>
+                        <h3>How to listen to the recording</h3>
+                            <p>Once you've selected the index,  
+                            </p>
                         </Tab.Pane>
                     </Tab.Content>
                     </Row>
@@ -80,4 +84,4 @@ class FAQModal extends Component {
     }
 }
 
-export default FAQModal;
+export default GlossaryModal;

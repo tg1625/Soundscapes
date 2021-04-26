@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
-import {Container, Row, Image, Button, CardDeck, Card, Tab, ListGroup, Modal} from 'react-bootstrap';
+import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup, Modal, Image} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
 
+import datanav from "../assets/datanav.jpg";
 
-class WelcomeModal extends Component {
+
+class TutorialModal extends Component {
     constructor(props){
         super(props);
         this.handleShow = this.handleShow.bind(this)
         this.handleClose = this.handleClose.bind(this)
         this.state = {
-            show: true
+            show: false
         };
     }
 
@@ -24,13 +26,16 @@ class WelcomeModal extends Component {
     render() {
         return (
             <>
-            {/* <Button variant="primary" onClick={this.handleShow}>
-                FAQ
+            <Button variant="link" onClick={this.handleShow}>
+                Tutorial
               </Button>
-         */}
-              <Modal show={this.state.show} onHide={this.handleClose}>
+        
+              <Modal 
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              show={this.state.show} onHide={this.handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Welcome to Eclipse Soundscapes!</Modal.Title>
+                  <Modal.Title>Tutorial</Modal.Title>
                 </Modal.Header>
                 <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                 <Modal.Body>
@@ -39,16 +44,17 @@ class WelcomeModal extends Component {
                     <Row>
                     <Tab.Content>
                         <Tab.Pane eventKey="#link1">
-                            <Image src="https://images.theconversation.com/files/181212/original/file-20170807-29295-pk07yg.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"/>
-                            <p>Solar eclipses are aweinspiring astronomical events where the moon obscures the sun. Little is known about how eclipses affect the
-                                soundscape of an environment. We need your help to find out! 
+                        <h3>How to analyze soundscape data</h3>
+                            <p>Soundscape data is sorted into six different acoustic indices. You can select which index data
+                                to view using the tabs at the top of the screen. 
                             </p>
+                            <Image src={datanav}/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="#link2">
-                            <h3>What are soundscapes?</h3>
-                            <p>A soundscape is a sound or combination of sounds that forms or arises from an immersive environment. 
-                                The study of soundscape is the subject of acoustic ecology or soundscape ecology. 
-                                Crucially, the term soundscape also includes the listener's perception of sounds heard as an environment: "how that environment is understood by those living within it"and therefore mediates their relations. The disruption of these acoustic environments results in noise pollution.</p>
+                            <h3>Viewing the data</h3>
+                                <p>
+                                    After you've selected an index, you will be given both the audio recording, and the graph of the index data
+                                </p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="#link3">
                             <h3>Start Sciencing! </h3>
@@ -91,4 +97,4 @@ class WelcomeModal extends Component {
     }
 }
 
-export default WelcomeModal;
+export default TutorialModal;
