@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* GENERAL STYLES */
+body{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:16px;
+}
+.row{
+  margin-top:1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row form{
+  min-width:100%;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  margin-top:60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.alt{
+  background: linear-gradient(90deg, #EFB55E 0%, #F4D16F 49.48%, #EFB55E 100%);
+}
+
+/* SIDEBAAR */
+.sidebar{
+  background: linear-gradient(0deg, #FFF7DD, #FFF7DD);
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 60px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-body .container{margin-top:0}
+
+/* WELCOME MODAL STYLES */
+.tab-pane img{width:100%;}
+
+.pagination{
+  width:100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* [role="tablist"]{
+  background-color: palevioletred;
+  
+} */
+
+/* DASHBOARD STYLES */
+
+.card{
+  transition:ease-in-out 0.2s all;
+}
+.card-deck a{
+  color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover{
+  /* font-size: 3em; */
+  pointer:cursor;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-deck a:hover{
+  text-decoration: none;
+}
+
+/* DATA PAGE STYLES */
+.dataDesc{
+  /* background-color:papayawhip; */
+}
+
+.line{
+  content: "";
+  position:absolute;
+    display: block;
+    /* margin: 0px 0 auto -250px; */
+    height: calc(100% - 250px);
+    width: 2px;
+    background: #e72918;
+    -webkit-border-radius: 2.5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2.5px;
+    -moz-background-clip: padding;
+    border-radius: 2.5px;
+    background-clip: padding-box;
+}
+
+.audioData{
+  /* background-color:paleturquoise; */
+}
+
+.audioData img{width:100%;}
+
+.audioData audio{
+  width: 100%;
 }
