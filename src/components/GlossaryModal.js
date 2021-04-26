@@ -60,6 +60,14 @@ class GlossaryModal extends Component {
                                 <p>Sometimes when the moon orbits Earth, it moves between the sun and Earth. When this happens, the moon blocks the light of the
                                      sun from reaching Earth. This causes an eclipse of the sun, or solar eclipse. During a solar eclipse,
                                       the moon casts a shadow onto Earth.</p>
+                                <h5>What are the Phases of an Eclipse?</h5>
+                                <ul>
+                                    <li>First Contact</li>
+                                    <li>Second Contact</li>
+                                    <li>Totality</li>
+                                    <li>Third Contact</li>
+                                    <li>Fourth Contact</li>
+                                </ul>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
                                 <h3>What are Soundscapes?</h3>

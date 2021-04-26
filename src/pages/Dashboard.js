@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup} from 'react-bootstrap';
+import {Container, Row, Col, Form, FormControl, Button, CardDeck, CardColumns, Card, Tab, ListGroup} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
 // import FAQModal from '../components/TutorialModal';
 import WelcomeAlert from '../components/WelcomeAlert';
@@ -41,22 +41,7 @@ class Dashboard extends Component {
                     </Row>
                     <Row>
                     <Col>
-                    <CardDeck>
-                        <Card as={Link} to={{pathname: "/data"}}>
-                            <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
-                            <Card.Body>
-                            <Card.Title>Greenville Total Eclipse 2017</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Greenville County, South Carolina </Card.Subtitle>
-                            <Card.Text>
-                                Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development
-                                gradient from downtown Greenville to the foothills of Blue Ridge
-                            </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                            <small className="text-muted">Date: August 21st, 2017</small>
-                            </Card.Footer>
-                        </Card>
-                        
+                    <CardColumns>
                         <Card as={Link} to={{pathname: "/data"}}>
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
                             <Card.Body>
@@ -85,7 +70,63 @@ class Dashboard extends Component {
                             <small className="text-muted">Date: August 21st, 2017</small>
                             </Card.Footer>
                         </Card>
-                        </CardDeck>
+                        <Card as={Link} to={{pathname: "/data"}}>
+                            <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
+                            <Card.Body>
+                            <Card.Title>Greenville Total Eclipse 2017</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">Greenville County, South Carolina </Card.Subtitle>
+                            <Card.Text>
+                                Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development
+                                gradient from downtown Greenville to the foothills of Blue Ridge
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Date: August 21st, 2017</small>
+                            </Card.Footer>
+                        </Card>
+                        <Card as={Link} to={{pathname: "/data"}}>
+                            <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
+                            <Card.Body>
+                            <Card.Title>Greenville Total Eclipse 2017</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">Greenville County, South Carolina </Card.Subtitle>
+                            <Card.Text>
+                                Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development
+                                gradient from downtown Greenville to the foothills of Blue Ridge
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Date: August 21st, 2017</small>
+                            </Card.Footer>
+                        </Card>
+                        <Card as={Link} to={{pathname: "/data"}}>
+                            <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
+                            <Card.Body>
+                            <Card.Title>Greenville Total Eclipse 2017</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">Greenville County, South Carolina </Card.Subtitle>
+                            <Card.Text>
+                                Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development
+                                gradient from downtown Greenville to the foothills of Blue Ridge
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Date: August 21st, 2017</small>
+                            </Card.Footer>
+                        </Card>
+                        <Card as={Link} to={{pathname: "/data"}}>
+                            <Card.Img variant="top" src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" />
+                            <Card.Body>
+                            <Card.Title>Greenville Total Eclipse 2017</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">Greenville County, South Carolina </Card.Subtitle>
+                            <Card.Text>
+                                Collection of acoustic data during the August 2017 total solar eclipse from eight sites in Greenville County along an urban development
+                                gradient from downtown Greenville to the foothills of Blue Ridge
+                            </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                            <small className="text-muted">Date: August 21st, 2017</small>
+                            </Card.Footer>
+                        </Card>
+                    </CardColumns>
 
                     </Col>
                     </Row>

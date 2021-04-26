@@ -63,7 +63,7 @@ a:hover{color:#2795b6;}
 }
 
 .navbar, .navbar-light{
-  background-color: black;
+  background-color: #1d1d1d;
   color:white;
 }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{color:white;}
@@ -76,7 +76,7 @@ a:hover{color:#2795b6;}
 }
 
 footer{
-  background-color:black;
+  background-color:#1d1d1d;
   color:white;
   padding:2em 0;
   margin-top:60px;
@@ -185,7 +185,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .card{
   transition:ease-in-out 0.2s all;
 }
-.card-deck a{
+.card-columns a{
   color:black;
 }
 
@@ -194,7 +194,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   pointer:cursor;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.card-deck a:hover{
+.card-columns a:hover{
   text-decoration: none;
 }
 
