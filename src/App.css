@@ -75,6 +75,14 @@ a:hover{color:#2795b6;}
   border-bottom:2px solid #F39A23;
 }
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  color:white;
+}
+
+.basic-nav-dropdown .dropdown-item.active, .basic-nav-dropdown .dropdown-item:active{
+  background-color:white;
+}
+
 footer{
   background-color:#1d1d1d;
   color:white;
@@ -99,6 +107,7 @@ footer .container .row{margin-top:0}
   height: 50px;
   right: 36px;
   bottom: 60px;
+  
 }
 
 /* Color/shape of burger icon bars */

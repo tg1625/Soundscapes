@@ -39,9 +39,9 @@ class WelcomeModal extends Component {
                     <Row>
                     <Tab.Content>
                         <Tab.Pane eventKey="#link1">
-                            <Image src="https://images.theconversation.com/files/181212/original/file-20170807-29295-pk07yg.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"/>
-                            <p>Solar eclipses are aweinspiring astronomical events where the moon obscures the sun. Little is known about how eclipses affect the
-                                soundscape of an environment. We need your help to find out! 
+                            <Image src="https://gray-kwtx-prod.cdn.arcpublishing.com/resizer/LsdlAfUV662Ho2mlzhi-HG0kVuY=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/NFUYCBJTIVLEBCKZ57WLISUJF4.jpg"/>
+                            <p><br/>Solar eclipses are awe-inspiring astronomical events where the moon obscures the sun. Much has been said about the visual spectacle of an eclipse, but
+                            little is known about how eclipses sound. We need your help to find out how eclipses affect soundscapes! 
                             </p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="#link2">
