@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, FormControl, Button, CardDeck, CardColumns, Card, Tab, ListGroup} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import {Container, Row, Col, Form, Button, CardColumns, Card} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 // import FAQModal from '../components/TutorialModal';
 import WelcomeAlert from '../components/WelcomeAlert';
 import WelcomeModal from '../components/WelcomeModal'
@@ -25,6 +25,7 @@ class Dashboard extends Component {
                     <Row>   
                         <Form inline>
                             <Form.Group>
+                                <Form.Label>Location</Form.Label>
                                 <Form.Control type="text" placeholder="Location" className="mx-sm-2" />
                             </Form.Group>
                             <Form.Group>

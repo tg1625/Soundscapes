@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Image, Button, CardDeck, Card, Tab, ListGroup, Modal} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import {Container, Row, Image, Button, Tab, ListGroup, Modal} from 'react-bootstrap';
 
 
 class WelcomeModal extends Component {

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import {Form, Button} from 'react-bootstrap';
 import Annotations from './Annotations';
 
@@ -24,7 +23,7 @@ class AnnotationForm extends Component{
     }
 
     componentDidUpdate(prevProps, prevState){
-        if(prevProps.time != this.props.time){
+        if(prevProps.time !== this.props.time){
             this.setState({time: this.props.time});
             console.log("Time is", this.props.time);
         }  

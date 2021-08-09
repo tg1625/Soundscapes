@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Jumbotron} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import {Container, Row, Col} from 'react-bootstrap';
 
 class FAQ extends Component {
     constructor(props){

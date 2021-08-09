@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup, Modal, Nav} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import {Container, Row, Col, Button, Tab, Modal, Nav} from 'react-bootstrap';
 
 
 class GlossaryModal extends Component {

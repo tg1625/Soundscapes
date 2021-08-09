@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, Button, ButtonGroup, Image, ListGroup, Tabs, Tab} from 'react-bootstrap';
+import {Container, Row, Col, Form, Image, ListGroup, Tabs, Tab} from 'react-bootstrap';
 import AnnotationForm from '../components/AnnotationForm';
 
 class Dashboard extends Component {

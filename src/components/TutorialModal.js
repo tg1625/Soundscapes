@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form, FormControl, Button, CardDeck, Card, Tab, ListGroup, Modal, Image} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
-
+import {Container, Row, Button, Tab, ListGroup, Modal, Image} from 'react-bootstrap';
 import datanav from "../assets/datanav.jpg";
 
 

@@ -1,14 +1,7 @@
 import React, {Component} from 'react';
-import {Nav, Navbar, NavDropdown, ListGroup, Button} from 'react-bootstrap';
-import PropTypes from 'prop-types';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 
 class Header extends Component {
-  constructor(props){
-    super(props);
-  }
-
-
-
   render() {
     return (
         <header>

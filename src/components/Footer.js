@@ -1,14 +1,7 @@
 import React, {Component} from 'react';
 import {Image, Container, Row, Col} from 'react-bootstrap';
-import PropTypes from 'prop-types';
 
 class Footer extends Component {
-  constructor(props){
-    super(props);
-  }
-
-
-
   render() {
     return (
         <footer>

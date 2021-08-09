@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Alert} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import { Alert} from 'react-bootstrap';
 
 
 class  WelcomeAlert extends Component {
